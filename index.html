@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eclipsia - Tarot y Tiradas</title>
-    <link rel="stylesheet" href="css/layoutp.css">
+    <title>Carrusel - Tarot y Tiradas</title>
+    <link rel="stylesheet" href="layoutp.css">
 </head>
 <body>
     <div class="browser-frame">
         <header class="site-header">
             <div class="logo-container">
                 <span class="logo-icon">⛧⃝𓄃</span>
-                <h1 class="site-title">˚⊱Eclipsia⊰˚</h1>
+                <h1 class="site-title">˚⊱Carrusel⊰˚</h1>
             </div>
             <nav class="main-nav">
                 <ul>
@@ -57,7 +57,7 @@
                     <div id="lista-tienda" class="lista-tarjetas"></div>
                 </div>
 
-                <!-- 5. TIRADA INTERACTIVA (CARRUSEL / ABANICO DE CARTAS) -->
+                <!-- 5. TIRADA INTERACTIVA (CARRUSEL DE CARTAS) -->
                 <div id="panel-interactivo" class="panel-seccion">
                     <button type="button" class="btn-regresar" data-target="panel-inicio">← Volver al Inicio</button>
                     <h2>Tirada Interactiva de Tarot</h2>
@@ -79,9 +79,9 @@
                             <button type="button" id="btn-rebarajar" class="btn-secundario">↻ Rebarajar mazo</button>
                         </div>
 
-                        <p id="estado-seleccion" class="estado-seleccion">Selecciona 1 carta del abanico (0/1 elegidas)</p>
+                        <p id="estado-seleccion" class="estado-seleccion">Selecciona 1 carta del carrusel (0/1 elegidas)</p>
 
-                        <!-- Carrusel / Abanico de cartas -->
+                        <!-- Carrusel de cartas -->
                         <div id="carrusel-cartas" class="carrusel-cartas" aria-label="Carrusel de cartas del tarot"></div>
 
                         <div id="cartas-elegidas-preview" class="cartas-elegidas-preview"></div>
@@ -111,7 +111,7 @@
         </main>
 
         <footer class="site-footer">
-            <p>&copy; 2026 Eclipsia. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Carrusel. Todos los derechos reservados.</p>
         </footer>
     </div>
 
@@ -120,7 +120,7 @@
         <div class="modal-content">
             <a href="#" class="btn-cerrar">&times;</a>
             <h2>Crear Cuenta</h2>
-            <form action="registrar.php" method="POST">
+            <form action="#" method="POST">
                 <div class="campo"><label>Nuevo Usuario:</label><input type="text" name="usuario" required></div>
                 <div class="campo"><label>Contraseña:</label><input type="password" name="password" required></div>
                 <button type="submit" class="btn-accion">Registrarse</button>
@@ -132,7 +132,7 @@
         <div class="modal-content">
             <a href="#" class="btn-cerrar">&times;</a>
             <h2>Iniciar Sesión</h2>
-            <form action="validar.php" method="POST">
+            <form action="#" method="POST">
                 <div class="campo"><label>Usuario:</label><input type="text" name="usuario" required></div>
                 <div class="campo"><label>Contraseña:</label><input type="password" name="password" required></div>
                 <button type="submit" class="btn-accion">Entrar</button>
@@ -144,7 +144,7 @@
         <div class="modal-content">
             <a href="#" class="btn-cerrar">&times;</a>
             <h2>Contáctanos</h2>
-            <form action="index.html" method="POST">
+            <form action="#" method="POST">
                 <div class="campo"><label>Nombre:</label><input type="text" name="nombre" required></div>
                 <div class="campo"><label>Correo electrónico:</label><input type="email" name="email" required></div>
                 <div class="campo"><label>Mensaje:</label><textarea name="mensaje" rows="4" required></textarea></div>
@@ -153,6 +153,6 @@
         </div>
     </div>
 
-    <script src="js/tirada.js"></script>
+    <script src="tirada.js"></script>
 </body>
 </html>
