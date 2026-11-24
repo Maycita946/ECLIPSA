@@ -20,7 +20,6 @@ const TIENDA_TIRADAS = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Navegación entre paneles
     const enlacesNav = document.querySelectorAll(".nav-link[data-target]");
     const botonesRegresar = document.querySelectorAll(".btn-regresar[data-target]");
     const paneles = document.querySelectorAll(".panel-seccion");
@@ -44,7 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Poblar catálogos y tienda
     const listaMayores = document.getElementById("lista-mayores");
     const listaMenores = document.getElementById("lista-menores");
     const listaTienda = document.getElementById("lista-tienda");
@@ -82,7 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Generador pseudoaleatorio (Fisher-Yates con crypto.getRandomValues)
     function numeroAleatorioSeguro(maxExclusive) {
         const buffer = new Uint32Array(1);
         window.crypto.getRandomValues(buffer);
@@ -98,7 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return copia;
     }
 
-    // Lógica del carrusel / tirada interactiva
     const carrusel = document.getElementById("carrusel-cartas");
     const estadoSeleccion = document.getElementById("estado-seleccion");
     const previewElegidas = document.getElementById("cartas-elegidas-preview");
